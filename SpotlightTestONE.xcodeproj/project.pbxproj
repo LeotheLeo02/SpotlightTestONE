@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE207DE929A1496300B87CF6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE207DE829A1496300B87CF6 /* LoginViewModel.swift */; };
+		BE207DEB29A14F5300B87CF6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BE207DEA29A14F5300B87CF6 /* FirebaseAuth */; };
+		BE207DED29A1720F00B87CF6 /* PressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE207DEC29A1720F00B87CF6 /* PressManager.swift */; };
 		BEDCA811299DE5820091A632 /* SpotlightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDCA810299DE5820091A632 /* SpotlightApp.swift */; };
 		BEDCA813299DE5820091A632 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDCA812299DE5820091A632 /* ContentView.swift */; };
 		BEDCA815299DE5830091A632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDCA814299DE5830091A632 /* Assets.xcassets */; };
 		BEDCA818299DE5830091A632 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDCA817299DE5830091A632 /* Preview Assets.xcassets */; };
+		BEDCA81F299DE7290091A632 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEDCA81E299DE7290091A632 /* GoogleService-Info.plist */; };
+		BEDCA822299DE8FF0091A632 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BEDCA821299DE8FF0091A632 /* FirebaseAnalytics */; };
+		BEDCA825299DEBE00091A632 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BEDCA824299DEBE00091A632 /* FirebaseDatabaseSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BEDCA80D299DE5820091A632 /* Spotlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE207DE429A1449600B87CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BE207DE529A144AA00B87CF6 /* Spotlight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Spotlight.entitlements; sourceTree = "<group>"; };
+		BE207DE829A1496300B87CF6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		BE207DEC29A1720F00B87CF6 /* PressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressManager.swift; sourceTree = "<group>"; };
+		BEDCA80D299DE5820091A632 /* SpotlightTestONE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotlightTestONE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDCA810299DE5820091A632 /* SpotlightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightApp.swift; sourceTree = "<group>"; };
 		BEDCA812299DE5820091A632 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BEDCA814299DE5830091A632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEDCA817299DE5830091A632 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEDCA81E299DE7290091A632 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDCA825299DEBE00091A632 /* FirebaseDatabaseSwift in Frameworks */,
+				BE207DEB29A14F5300B87CF6 /* FirebaseAuth in Frameworks */,
+				BEDCA822299DE8FF0091A632 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,13 +51,14 @@
 			children = (
 				BEDCA80F299DE5820091A632 /* Spotlight */,
 				BEDCA80E299DE5820091A632 /* Products */,
+				BEDCA823299DEBE00091A632 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		BEDCA80E299DE5820091A632 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BEDCA80D299DE5820091A632 /* Spotlight.app */,
+				BEDCA80D299DE5820091A632 /* SpotlightTestONE.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,9 +66,14 @@
 		BEDCA80F299DE5820091A632 /* Spotlight */ = {
 			isa = PBXGroup;
 			children = (
+				BE207DE529A144AA00B87CF6 /* Spotlight.entitlements */,
+				BE207DE429A1449600B87CF6 /* Info.plist */,
 				BEDCA810299DE5820091A632 /* SpotlightApp.swift */,
 				BEDCA812299DE5820091A632 /* ContentView.swift */,
+				BE207DEC29A1720F00B87CF6 /* PressManager.swift */,
+				BE207DE829A1496300B87CF6 /* LoginViewModel.swift */,
 				BEDCA814299DE5830091A632 /* Assets.xcassets */,
+				BEDCA81E299DE7290091A632 /* GoogleService-Info.plist */,
 				BEDCA816299DE5830091A632 /* Preview Content */,
 			);
 			path = Spotlight;
@@ -67,12 +87,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BEDCA823299DEBE00091A632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BEDCA80C299DE5820091A632 /* Spotlight */ = {
+		BEDCA80C299DE5820091A632 /* SpotlightTestONE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEDCA81B299DE5830091A632 /* Build configuration list for PBXNativeTarget "Spotlight" */;
+			buildConfigurationList = BEDCA81B299DE5830091A632 /* Build configuration list for PBXNativeTarget "SpotlightTestONE" */;
 			buildPhases = (
 				BEDCA809299DE5820091A632 /* Sources */,
 				BEDCA80A299DE5820091A632 /* Frameworks */,
@@ -82,9 +109,14 @@
 			);
 			dependencies = (
 			);
-			name = Spotlight;
+			name = SpotlightTestONE;
+			packageProductDependencies = (
+				BEDCA821299DE8FF0091A632 /* FirebaseAnalytics */,
+				BEDCA824299DEBE00091A632 /* FirebaseDatabaseSwift */,
+				BE207DEA29A14F5300B87CF6 /* FirebaseAuth */,
+			);
 			productName = Spotlight;
-			productReference = BEDCA80D299DE5820091A632 /* Spotlight.app */;
+			productReference = BEDCA80D299DE5820091A632 /* SpotlightTestONE.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BEDCA808299DE5820091A632 /* Build configuration list for PBXProject "Spotlight" */;
+			buildConfigurationList = BEDCA808299DE5820091A632 /* Build configuration list for PBXProject "SpotlightTestONE" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,11 +143,15 @@
 				Base,
 			);
 			mainGroup = BEDCA804299DE5820091A632;
+			packageReferences = (
+				BEDCA820299DE8FF0091A632 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BE207DDF29A1434300B87CF6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = BEDCA80E299DE5820091A632 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BEDCA80C299DE5820091A632 /* Spotlight */,
+				BEDCA80C299DE5820091A632 /* SpotlightTestONE */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +163,7 @@
 			files = (
 				BEDCA818299DE5830091A632 /* Preview Assets.xcassets in Resources */,
 				BEDCA815299DE5830091A632 /* Assets.xcassets in Resources */,
+				BEDCA81F299DE7290091A632 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE207DE929A1496300B87CF6 /* LoginViewModel.swift in Sources */,
+				BE207DED29A1720F00B87CF6 /* PressManager.swift in Sources */,
 				BEDCA813299DE5820091A632 /* ContentView.swift in Sources */,
 				BEDCA811299DE5820091A632 /* SpotlightApp.swift in Sources */,
 			);
@@ -264,12 +303,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Spotlight/Spotlight.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Spotlight/Preview Content\"";
 				DEVELOPMENT_TEAM = 8LGZB97F67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Spotlight/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,12 +334,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Spotlight/Spotlight.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Spotlight/Preview Content\"";
 				DEVELOPMENT_TEAM = 8LGZB97F67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Spotlight/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,7 +363,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BEDCA808299DE5820091A632 /* Build configuration list for PBXProject "Spotlight" */ = {
+		BEDCA808299DE5820091A632 /* Build configuration list for PBXProject "SpotlightTestONE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEDCA819299DE5830091A632 /* Debug */,
@@ -329,7 +372,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEDCA81B299DE5830091A632 /* Build configuration list for PBXNativeTarget "Spotlight" */ = {
+		BEDCA81B299DE5830091A632 /* Build configuration list for PBXNativeTarget "SpotlightTestONE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEDCA81C299DE5830091A632 /* Debug */,
@@ -339,6 +382,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE207DDF29A1434300B87CF6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		BEDCA820299DE8FF0091A632 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE207DEA29A14F5300B87CF6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEDCA820299DE8FF0091A632 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BEDCA821299DE8FF0091A632 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEDCA820299DE8FF0091A632 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		BEDCA824299DEBE00091A632 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEDCA820299DE8FF0091A632 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BEDCA805299DE5820091A632 /* Project object */;
 }
